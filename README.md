@@ -6,6 +6,14 @@ Sibling to [Claude Multi-Account Status Bar](https://github.com/southglory/claud
 same idea, for **OpenAI Codex**. It reads each account's session logs locally (no
 network calls, no credentials) and shows today's estimated spend per account.
 
+**Today's spend, right in the status bar** (with a breathing 🦘 wallaby):
+
+![Codex account in the status bar](images/statusbar.png)
+
+**Hover for tokens & cost — today / 7 days / all logs:**
+
+![Hover tooltip: window, tokens, estimated cost](images/tooltip.png)
+
 ## Features
 
 - **N accounts, side by side** — leave the list empty and it auto-detects `.codex*`
