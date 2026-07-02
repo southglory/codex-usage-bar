@@ -2,6 +2,11 @@
 
 [English](README.md) · **한국어**
 
+[![VS Marketplace](https://img.shields.io/visual-studio-marketplace/v/QG-devramyun.codex-usage-bar?label=VS%20Marketplace&logo=visualstudiocode&color=2d7d9a)](https://marketplace.visualstudio.com/items?itemName=QG-devramyun.codex-usage-bar)
+[![Open VSX](https://img.shields.io/open-vsx/v/QG-devramyun/codex-usage-bar?label=Open%20VSX&color=c160ef)](https://open-vsx.org/extension/QG-devramyun/codex-usage-bar)
+[![Release](https://img.shields.io/github/v/release/southglory/codex-usage-bar?color=4e94ce)](https://github.com/southglory/codex-usage-bar/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 > **모든 OpenAI Codex 계정**의 토큰 사용량·예상 비용을 — VS Code 상태바에서.
 
 [Claude Multi-Account Status Bar](https://github.com/southglory/claude-usage-bar)의
@@ -36,6 +41,12 @@
 
 > ℹ️ 로컬 세션 로그 기반이라 표시되는 수치는 **이 컴퓨터에서 한 작업 기준**입니다.
 > 다른 기기에서 한 Codex 사용량은 합산되지 않습니다.
+
+## 설치
+
+- **VS Code** — [**Marketplace**](https://marketplace.visualstudio.com/items?itemName=QG-devramyun.codex-usage-bar): **"Codex Multi-Account Usage"** 검색 또는 `ext install QG-devramyun.codex-usage-bar`.
+- **Cursor / Windsurf / VSCodium** — [**Open VSX**](https://open-vsx.org/extension/QG-devramyun/codex-usage-bar): 확장 패널에서 같은 이름으로 검색.
+- **VSIX**: [Releases](https://github.com/southglory/codex-usage-bar/releases)에서 받아 `code --install-extension codex-usage-bar-0.1.0.vsix`.
 
 ## 설정 (`settings.json`)
 

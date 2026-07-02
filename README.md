@@ -2,6 +2,11 @@
 
 **English** · [한국어](README.ko.md)
 
+[![VS Marketplace](https://img.shields.io/visual-studio-marketplace/v/QG-devramyun.codex-usage-bar?label=VS%20Marketplace&logo=visualstudiocode&color=2d7d9a)](https://marketplace.visualstudio.com/items?itemName=QG-devramyun.codex-usage-bar)
+[![Open VSX](https://img.shields.io/open-vsx/v/QG-devramyun/codex-usage-bar?label=Open%20VSX&color=c160ef)](https://open-vsx.org/extension/QG-devramyun/codex-usage-bar)
+[![Release](https://img.shields.io/github/v/release/southglory/codex-usage-bar?color=4e94ce)](https://github.com/southglory/codex-usage-bar/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 > Token usage & estimated cost for **every OpenAI Codex account** — in your VS Code status bar.
 
 Sibling to [Claude Multi-Account Status Bar](https://github.com/southglory/claude-usage-bar):
@@ -37,6 +42,12 @@ configurable per-million rates.
 
 > ℹ️ Because it reads local session logs, the numbers reflect **what you did on this
 > machine**. Codex usage from other computers isn't summed in.
+
+## Install
+
+- **VS Code** — [**Marketplace**](https://marketplace.visualstudio.com/items?itemName=QG-devramyun.codex-usage-bar): search **"Codex Multi-Account Usage"**, or `ext install QG-devramyun.codex-usage-bar`.
+- **Cursor / Windsurf / VSCodium** — [**Open VSX**](https://open-vsx.org/extension/QG-devramyun/codex-usage-bar): search the same name in the extensions panel.
+- **From VSIX**: download from [Releases](https://github.com/southglory/codex-usage-bar/releases) → `code --install-extension codex-usage-bar-0.1.0.vsix`.
 
 ## Configure (`settings.json`)
 
