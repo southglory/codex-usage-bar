@@ -18,6 +18,10 @@
     "commands": [
       { "command": "codexUsage.refresh", "title": "Codex Usage: Refresh" }
     ],
+    "icons": {
+      "wallaby-0": { "description": "Wallaby mascot — frame 0 (rest)", "default": { "fontPath": "wallaby.ttf", "fontCharacter": "\\E001" } },
+      "wallaby-1": { "description": "Wallaby mascot — frame 1 (bob up)", "default": { "fontPath": "wallaby.ttf", "fontCharacter": "\\E002" } }
+    },
     "configuration": {
       "title": "Codex Multi-Account Usage",
       "properties": {

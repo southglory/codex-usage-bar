@@ -5,8 +5,8 @@ const os = require('os');
 const { expandDir, dayKey, discoverAccounts, scanUsage, cost } = require('./usage.js');
 
 const CFG = 'codexUsage';
-// Breathing mascot frames. Fallback block glyphs until the pixel wallaby font ships.
-const FRAMES = ['▃', '▆'];
+// Breathing wallaby mascot — two glyphs from the bundled wallaby.ttf icon font.
+const FRAMES = ['$(wallaby-0)', '$(wallaby-1)'];
 
 function config() {
   const c = vscode.workspace.getConfiguration(CFG);
