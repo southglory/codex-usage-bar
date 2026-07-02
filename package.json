@@ -1,0 +1,68 @@
+{
+  "name": "codex-usage-bar",
+  "displayName": "Codex Multi-Account Usage",
+  "description": "Show token usage & estimated cost for every OpenAI Codex account (auto-detected, multi-account) in the VS Code status bar.",
+  "version": "0.1.0",
+  "publisher": "QG-devramyun",
+  "author": "southglory",
+  "repository": { "type": "git", "url": "https://github.com/southglory/codex-usage-bar.git" },
+  "homepage": "https://github.com/southglory/codex-usage-bar#readme",
+  "bugs": { "url": "https://github.com/southglory/codex-usage-bar/issues" },
+  "keywords": ["codex", "openai", "usage", "status bar", "multi-account", "CODEX_HOME", "token", "cost"],
+  "license": "MIT",
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "codexUsage.refresh", "title": "Codex Usage: Refresh" }
+    ],
+    "configuration": {
+      "title": "Codex Multi-Account Usage",
+      "properties": {
+        "codexUsage.accounts": {
+          "type": "array",
+          "markdownDescription": "Accounts to display. `dir` is each account's `CODEX_HOME` (`~`/`%VAR%`/`${env}` expanded). **Leave empty** to auto-detect `.codex*` directories in your home folder.",
+          "items": {
+            "type": "object",
+            "required": ["label", "dir"],
+            "properties": {
+              "label": { "type": "string", "description": "Status bar label (free text)" },
+              "dir": { "type": "string", "description": "Codex home dir (e.g. ~/.codex, ~/.codex-work)" }
+            }
+          },
+          "default": []
+        },
+        "codexUsage.refreshIntervalSeconds": {
+          "type": "number", "default": 30, "minimum": 5,
+          "description": "How often to rescan the session logs (seconds)"
+        },
+        "codexUsage.pricing.inputPerMillion": {
+          "type": "number", "default": 1.25,
+          "description": "Cost estimate: USD per 1M non-cached input tokens"
+        },
+        "codexUsage.pricing.cachedInputPerMillion": {
+          "type": "number", "default": 0.125,
+          "description": "Cost estimate: USD per 1M cached input tokens"
+        },
+        "codexUsage.pricing.outputPerMillion": {
+          "type": "number", "default": 10,
+          "description": "Cost estimate: USD per 1M output tokens (reasoning included)"
+        },
+        "codexUsage.showCharacter": {
+          "type": "boolean", "default": true,
+          "description": "Show the breathing wallaby mascot before each account"
+        },
+        "codexUsage.enableAnimation": {
+          "type": "boolean", "default": true,
+          "description": "Animate the mascot's breathing (requires showCharacter)"
+        },
+        "codexUsage.animationPeriodMs": {
+          "type": "number", "default": 2000, "minimum": 400,
+          "description": "One full breathing cycle (ms)"
+        }
+      }
+    }
+  }
+}
