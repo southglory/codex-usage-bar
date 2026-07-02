@@ -3,6 +3,7 @@
   "displayName": "Codex Multi-Account Usage",
   "description": "Show token usage & estimated cost for every OpenAI Codex account (auto-detected, multi-account) in the VS Code status bar.",
   "version": "0.1.0",
+  "icon": "icon.png",
   "publisher": "QG-devramyun",
   "author": "southglory",
   "repository": { "type": "git", "url": "https://github.com/southglory/codex-usage-bar.git" },

@@ -1,5 +1,7 @@
 # Codex Multi-Account Usage
 
+**English** · [한국어](README.ko.md)
+
 > Token usage & estimated cost for **every OpenAI Codex account** — in your VS Code status bar.
 
 Sibling to [Claude Multi-Account Status Bar](https://github.com/southglory/claude-usage-bar):
@@ -32,6 +34,9 @@ configurable per-million rates.
 
 > **Cost is an estimate**, not your bill — it's the API-equivalent value of your exact
 > token counts. Adjust `codexUsage.pricing.*` to match current OpenAI pricing.
+
+> ℹ️ Because it reads local session logs, the numbers reflect **what you did on this
+> machine**. Codex usage from other computers isn't summed in.
 
 ## Configure (`settings.json`)
 
